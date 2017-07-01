@@ -9,25 +9,6 @@ namespace FileCheck
 {
     public class FileTypeCheck
     {
-        public static readonly string ErrType = ImageType.None.ToString();
-
-        private static SortedDictionary<int, ImageType> InitImageTag()
-        {
-            SortedDictionary<int, ImageType> list = new SortedDictionary<int, ImageType>();
-
-            list.Add((int)ImageType.BMP, ImageType.BMP);
-            list.Add((int)ImageType.JPG, ImageType.JPG);
-            list.Add((int)ImageType.GIF, ImageType.GIF);
-            list.Add((int)ImageType.PCX, ImageType.PCX);
-            list.Add((int)ImageType.PNG, ImageType.PNG);
-            list.Add((int)ImageType.PSD, ImageType.PSD);
-            list.Add((int)ImageType.RAS, ImageType.RAS);
-            list.Add((int)ImageType.SGI, ImageType.SGI);
-            list.Add((int)ImageType.TIFF, ImageType.TIFF);
-            return list;
-
-        }
-
         /// <summary>  
         /// 通过文件头判断图像文件的类型  
         /// </summary>  
